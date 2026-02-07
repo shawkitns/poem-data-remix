@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body { 
+   background-color: black;
+   margin: 5rem 4rem;
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {   
+   margin: 0;
+   padding: 0;
+   color: white;
+   display: inline-block;
+   font-size: 2rem;
+   text-shadow:
+     0 0 10px rgba(255,255,255,0.6),
+     0 0 20px rgba(255,255,255,0.45),
+     0 0 30px rgba(255,255,255,0.35),
+     0 0 40px rgba(170,170,170,0.25),
+     0 0 50px rgba(140,140,140,0.2),
+     0 0 60px rgba(110,110,110,0.15),
+     0 0 70px rgba(80,80,80,0.1);
+}
+
+h2 {
+   font-size: 2rem;
+}
+
+h1, h2 {
+  animation: animateGlithcy 3s linear infinite alternate;
+}
+
+h1:nth-child(odd),
+h2:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+h1:nth-child(even),
+h2:nth-child(even) {
+  animation-delay: 0.6s;
+}
+
+
+@keyframes animateGlithcy {
+	0% {
+		opacity: .1;
+		background-position: 0 0;
+		filter: grayscale(100%);
+	}
+	10% {
+		background-position: 5px 0;
+	}
+	20% {
+		background-position: -5px 0;
+	}
+	30% {
+		background-position: 15px 0;
+	}
+	40% {
+		background-position: -5px 0;
+	}
+	50% {
+		background-position: -25px 0;
+	}
+	60% {
+		background-position: -50px 0;
+	}
+	70% {
+		background-position: 0 -20px;
+	}
+	80% {
+		background-position: -60px -20px;
+	}
+	81% {
+		background-position: 0 0;
+	}
+	100% {
+		opacity: 1;
+		background-position: 0 0;
+		filter: grayscale(100%);
+	}
+}

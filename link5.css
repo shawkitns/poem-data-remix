@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 5pt;
+}
+
+body {
+  background: black;
+  font-family: system-ui, sans-serif;
+  overflow-y: auto;
+}
+
+/* ONE camera for the entire building */
+.stage {
+  perspective: 800px;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* One floor */
+.wrap {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  transform-style: preserve-3d;
+}
+
+/* Shared text styles */
+.left,
+.right {
+  font-size: clamp(2rem, 6vw, 6rem);
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  white-space: nowrap;
+}
+
+/* Left face */
+.left {
+  transform-origin: right center;
+  transform: rotateY(-18deg);
+}
+
+/* Right face */
+.right {
+  transform-origin: left center;
+  transform: rotateY(18deg);
+}

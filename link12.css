@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+html, body {
+  background: black;
+  margin: 0;
+  height: 100%;
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100vw;              /* full screen width */
+}
+
+.line {
+  width: 100%;               /* each line spans full width */
+  color: white;
+  font-size: 2em;
+  font-family: "Science Gothic", sans-serif;
+  letter-spacing: 6px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  white-space: nowrap;       /* ❌ no line breaking */
+  text-align: center;        /* 🎯 center text */
+  display: block;            /* row behavior */
+}
+
+.l2, .l4, .l6, .l8, .l10, .l12 {
+  font-weight: 100;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+main {
+    margin: 8rem 2rem 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+      transform: scaleX(-1);
+
+}
+
+main {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.poem {
+    font-family: 'Schoolbell';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    margin: 0;
+    line-height: 80%;
+    text-align: justify;
+    color: white;
+}
+
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}

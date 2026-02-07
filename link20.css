@@ -1,0 +1,111 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  font-family: "Barrio", system-ui;
+  overflow: hidden; 
+}
+
+.poem {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.line {
+  position: absolute;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 4px;
+  white-space: nowrap;
+}
+
+.line:nth-child(1)  { top: 5%;  left: 8%;  font-size: 2.4rem; transform: rotate(-8deg); }
+.line:nth-child(2)  { top: 15%; left: 55%; font-size: 1.6rem; transform: rotate(6deg); }
+.line:nth-child(3)  { top: 28%; left: 18%; font-size: 1.9rem; transform: rotate(-3deg); }
+.line:nth-child(4)  { top: 38%; left: 62%; font-size: 2.2rem; transform: rotate(10deg); }
+
+.line:nth-child(5)  { top: 50%; left: 10%; font-size: 1.7rem; transform: rotate(4deg); }
+.line:nth-child(6)  { top: 60%; left: 48%; font-size: 2.6rem; transform: rotate(-6deg); }
+.line:nth-child(7)  { top: 70%; left: 22%; font-size: 1.5rem; transform: rotate(12deg); }
+.line:nth-child(8)  { top: 78%; left: 60%; font-size: 2.1rem; transform: rotate(-10deg); }
+
+.line:nth-child(9)  { top: 20%; left: 30%; font-size: 1.4rem; transform: rotate(15deg); }
+.line:nth-child(10) { top: 85%; left: 12%; font-size: 1.8rem; transform: rotate(-4deg); }
+
+.line:nth-child(11) { top: 45%; left: 35%; font-size: 3rem; transform: rotate(2deg); }
+.line:nth-child(12) { top: 8%;  left: 70%; font-size: 2rem; transform: rotate(-12deg); } */
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  font-family: Inconsolata, monospace;
+}
+
+/* Container */
+.matrix {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+/* One column */
+.col {
+  position: relative;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Base text rules */
+.col span {
+  position: absolute;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+}
+
+/* Main sentence */
+.main {
+  color: #00ff66;
+  font-size: 1rem;
+  opacity: 1;
+  filter: none;
+  text-shadow:
+    0 0 5px rgba(0,255,100,0.9),
+    0 0 12px rgba(0,255,100,0.5);
+}
+
+/* Ghost layers */
+.ghost {
+  color: #00ff66;
+  text-shadow: 0 0 6px rgba(0,255,100,0.4);
+}
+
+/* First echo */
+.g1 {
+  font-size: 0.95rem;
+  opacity: 0.45;
+  transform: translateX(0.6rem);
+  filter: blur(1px);
+}
+
+/* Second echo */
+.g2 {
+  font-size: 0.75rem;
+  opacity: 0.25;
+  transform: translateX(1.2rem);
+  filter: blur(2px);
+}

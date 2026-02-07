@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+
+html, body {
+  font-family: "Josefin Sans", sans-serif;
+  background: black;
+  height: 100%;
+  margin: 0;
+padding-left: 2.5%;}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.line {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 6px;
+  /* font-weight: 900; */
+  display: inline-block;
+
+    font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+
+}
+
+.alt-font {
+  font-size: 4.5em;
+}
+

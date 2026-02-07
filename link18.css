@@ -1,0 +1,19 @@
+main {
+    margin: 6rem 0 2rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.poem {
+    display: inline-block;
+    font-family: "Arial", sans-serif;
+    font-size: 3rem;
+    line-height: 80%;
+    text-align: justify;
+    text-align-last: justify;
+    width: 60%;
+    text-transform: lowercase;
+}

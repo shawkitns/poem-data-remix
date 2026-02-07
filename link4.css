@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+  background: black;
+  color: white;
+  font-family: "EB Garamond", serif;
+  margin: 0;
+}
+
+main {
+  margin: 6rem 3rem;
+}
+
+h1 {
+  font-size: 1rem;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+}
+
+/* Poem container */
+.poem {
+  max-width: 700px;     /* controls line length */
+  margin: 0 auto;       /* centers the block */
+  padding: 0 1.5rem;    /* left & right breathing room */
+
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: left;
+text-transform: uppercase;
+
+
+}
+
+/* Shared fade-in behavior */
+.group {
+  opacity: 0;
+  animation: fadeIn 3.0s ease forwards;
+  margin-bottom: 1.2rem;
+}
+
+/* Red final line */
+.red {
+  color: red;
+}
+
+/* Staggered delays (8 groups) */
+.g1 { animation-delay: 0.5s; }
+.g2 { animation-delay: 8.3s; }
+.g3 { animation-delay: 15.9s; }
+.g4 { animation-delay: 26.0s; }
+.g5 { animation-delay: 33.0s; }
+.g6 { animation-delay: 41.8s; }
+.g7 { animation-delay: 41.8s; }
+.g8 { animation-delay: 45s; }
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

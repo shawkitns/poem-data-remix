@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100..900&display=swap');
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: black;
+  font-family: "Advent Pro", sans-serif;
+}
+
+.poem {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* shared corner styling */
+.corner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 40vw;
+}
+
+.line {
+  color: white;
+  font-size: 2em;
+}
+
+/* corners */
+.upper-left {
+  top: 2rem;
+  left: 2rem;
+  text-align: left;
+}
+
+.upper-right {
+  top: 2rem;
+  right: 2rem;
+  text-align: right;
+}
+
+.lower-left {
+  bottom: 2rem;
+  left: 2rem;
+  text-align: left;
+}
+
+.lower-right {
+  bottom: 2rem;
+  right: 2rem;
+  text-align: right;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+html, body {
+  font-family: "Cinzel", serif;
+  background: black;
+  height: 100%;
+  margin: 0;
+padding-left: 2.5%;}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.line {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 6px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.l1{
+  font-weight: 100;
+}
+.l2{
+  font-weight: 200;
+}
+.l3{
+  font-weight: 300;
+}
+.l4{
+  font-weight: 400;
+}
+.l5{
+  font-weight: 500;
+}
+.l6{
+  font-weight: 600;
+}
+.l7{
+  font-weight: 700;
+}
+.l8{
+  font-weight: 800;
+}
+.l9{
+  font-weight: 900;
+}
+.l10{
+  font-weight: 1000;
+}
+.l11{
+  font-weight: 1100;
+}
+
+/* .l1, .l4 , .l11{
+    font-size: 2.4em;
+
+} */

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+
+.main-content {
+  overflow:hidden;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    
+    height: 100vh;
+    
+
+  background: black;
+    color: #fff;
+    text-align: center;
+}
+
+.vignette{
+  position:absolute;
+  width:100%; height:100%;
+  box-shadow:inset 0px 0px 150px 20px black;
+  mix-blend-mode: multiply;
+  -webkit-animation: vignette-anim 3s infinite; /* Safari 4+ */
+  -moz-animation:    vignette-anim 3s infinite; /* Fx 5+ */
+  -o-animation:      vignette-anim 3s infinite; /* Opera 12+ */
+  animation:         vignette-anim 3s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes floatText {
+  from {
+    transform: translateY(var(--float-start));
+  }
+  to {
+    transform: translateY(var(--float-end));
+  }
+}
+
+.main-title {
+  animation: floatText 6s ease-in-out infinite alternate;
+  font-family: 'Bellefair', serif;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+
+.titleCont{position:relative;}
+
+.main-title {
+    padding: .3em 1em .25em;    
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Bellefair', serif;
+    position:relative;
+    line-height:1.3;
+white-space: nowrap;
+}
+
+.overTitle{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* BLOCK 1 — left */
+.block-1 {
+  align-self: flex-start;
+  padding-left: 20rem;
+
+  --float-start: -30px;
+  --float-end: 30px;
+}
+
+/* BLOCK 2 — right */
+.block-2 {
+  align-self: flex-end;
+  padding-right: 20rem;
+  margin-top: 3rem;
+
+  --float-start: 55px;
+  --float-end: -5px;
+}
+
+/* BLOCK 3 — left again */
+.block-3 {
+  align-self: flex-start;
+  padding-left: 20rem;
+  margin-top: 1rem;
+
+  --float-start: -20px;
+  --float-end: 45px;
+}

@@ -1,0 +1,24 @@
+body {
+  background: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.stage {
+  perspective: 1200px;
+  text-align: center;
+}
+
+.line {
+  font-size: 36px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  color: white;
+  white-space: nowrap;
+
+  transform: rotateY(var(--ry));
+  transform-style: preserve-3d;
+}
